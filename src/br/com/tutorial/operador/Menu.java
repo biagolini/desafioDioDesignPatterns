@@ -1,4 +1,8 @@
-package br.com.operador;
+package br.com.tutorial.operador;
+
+import br.com.tutorial.padroes.facade.Facade;
+import br.com.tutorial.padroes.singleton.Singleton;
+import br.com.tutorial.padroes.strategy.Strategy;
 
 import java.util.Scanner;
 
@@ -6,15 +10,18 @@ public class Menu {
     Scanner scanner = new Scanner(System.in);
 
     private void singleton() {
-        System.out.printf("Exemplo de uso do padrão Singleton...\n");
+        Singleton singleton = new Singleton();
+        singleton.testeSingleton();
     }
 
     private void strategy() {
-        System.out.printf("Exemplo de uso do padrão Strategy...\n");
+        Strategy strategy = new Strategy();
+        strategy.testeStrategy();
     }
 
     private void facade() {
-        System.out.printf("Exemplo de uso do padrão Facade...\n");
+        Facade facade = new Facade();
+        facade.testeFacade();
     }
 
     public void menu(){
@@ -63,7 +70,5 @@ public class Menu {
                 .replace('^', '\u2518')
                 .replace('-', '\u2500');
     }
-
-
 
 }

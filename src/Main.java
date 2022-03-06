@@ -1,4 +1,4 @@
-import br.com.operador.Menu;
+import br.com.tutorial.operador.Menu;
 
 public class Main {
     public static void main(String[] args) {
